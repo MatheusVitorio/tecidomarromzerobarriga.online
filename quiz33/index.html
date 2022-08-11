@@ -2,7 +2,9 @@
 <html lang="pt-br">
   <head>
 
-    <!-- Facebook Pixel Code -->
+    <!-- Meta Pixel Code -->
+
+        <!-- Facebook Pixel Code -->
         <script>
         !function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -13,7 +15,7 @@
         s.parentNode.insertBefore(t,s)}(window,document,'script',
         'https://connect.facebook.net/en_US/fbevents.js');
         fbq('init', '731010754894397'); 
-        fbq('track', 'Quiz33');
+        fbq('track', 'PageView');
         </script>
         <noscript>
          <img height="1" width="1" 
@@ -22,7 +24,7 @@
         </noscript>
         <!-- End Facebook Pixel Code -->
 
-    <!-- Facebook Pixel Code -->
+        <!-- Facebook Pixel Code -->
         <script>
         !function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -33,7 +35,7 @@
         s.parentNode.insertBefore(t,s)}(window,document,'script',
         'https://connect.facebook.net/en_US/fbevents.js');
         fbq('init', '1126965187881915'); 
-        fbq('track', 'Quiz33');
+        fbq('track', 'PageView');
         </script>
         <noscript>
          <img height="1" width="1" 
@@ -42,123 +44,26 @@
         </noscript>
         <!-- End Facebook Pixel Code -->
 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <style>
-          @font-face {
-            font-family: Gotham Rounded;
-            src: url("font.otf") format("opentype");
-          }
-          *, *::before, *::after {
-            box-sizing: border-box;
-            font-family: Gotham Rounded;
-          }
-        body {
-          padding: 0;
-          margin: 0;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          width: 100vw;
-          height: 100vh;
-          background: url("bg4.png");
-          background-size: cover;
-          background-repeat: no-repeat;
-        }
-        
-    .container {
-      width: 700px;
-      max-width: 90%;
-    }
-    .black {
-      background-color: white;
-      padding: 10px;
-      text-align: center;
-      border-radius: 20px;
-      box-shadow: 0 0 10px 2px;
-    }
-    .answer {
-      display: grid;
-      grid-template-columns: repeat(2, auto);
-      gap: 10px;
-    }
-    @media (max-width: 991px) {
-      .answer {
-        display: grid;
-        grid-template-columns: repeat(1, auto);
-        gap: 10px;
-      }
-    }
-    .btn {
-      border-radius: 10px;
-      padding: 5px 10px;
-      font-size: 30px;
-      background-color: #f7ce6a;
-      outline: none;
-      text-decoration: none;
-      color: black;
-    }
-    .black h1 {
-      color: black;
-    }
-    .black p {
-      font-size: 18px;
-    }
-    .hide {
-      display: none;
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="style.css">
+  <title>Tudo Pronto!</title>
 </head>
 <body> 
   <div class="container">
     <div class="black">
-      <div id="primeira">
+      <div>
         <div class="question">
-          <h2>VOCÊ QUER TRANSFORMAR SUA VIDA, DE UMA VEZ POR TODAS?</h2>
-          <p>Você quer descobrir esse segredo?</p>
+          <h1>TUDO PRONTO!!</h1>
+          <p>Clique abaixo para continuar</p>
         </div>
         <div class="answer">
-          <button class="btn" onclick="segunda()">SIM</button>
-          <button class="btn" onclick="segunda()">NÃO</button>
+          <a class="btn" href="https://tecidomarromzerobarriga.online">CONTINUAR</a>
         </div>
-      </div>
-      <div id="segunda" class="hide">
-        <div class="question">
-          <h2>POUCAS PESSOAS SABEM DISSO</h2>
-          <p>Você promete não revelar com ninguém?</p>
-        </div>
-        <div class="answer">
-          <button class="btn" onclick="terceira()">SIM</button>
-          <button class="btn" onclick="terceira()">NÃO</button>
-        </div>
-      </div>
-      <div id="terceira" class="hide">
-        <div class="question">
-          <h2>APROVEITE SUA CHANCE!!</h2>
-          <p>O vídeo a seguir tem um limite para pouquíssimas pessoas verem ao mesmo tempo... Você pretende ver até o fim?</p>
-        </div>
-        <div class="answer">
-          <button class="btn" onclick="redirect()">SIM</button>
-          <button class="btn" onclick="redirect()">NÃO</button>
-        </div>
-      </div>
+      </div>    
     </div>
-    <p style="text-align: center; font-weight: bold;">© 2022 – Todos os direitos reservados. Este site não faz parte nem é endossado pelo Facebook. Facebook é uma marca comercial da Facebook, Inc.</p>
-    <p style="text-align: center; font-weight: bold;"><a href="https://tecidomarromzerobarriga.online/termos" style="color: black;">Termos de Uso</a> | <a href="https://tecidomarromzerobarriga.online/privacidade" style="color: black;">Política de Privacidade</a></p>
+    <p style="text-align color:white; : center; font-weight: bold;">© 2022 – Todos os direitos reservados. Este site não faz parte nem é endossado pelo Facebook. Facebook é uma marca comercial da Facebook, Inc.</p>
   </div>
-  <script>
-    function segunda() {
-      document.getElementById("primeira").classList.add("hide")
-      document.getElementById("segunda").classList.remove("hide")
-    }
-    function terceira() {
-      document.getElementById("segunda").classList.add("hide")
-      document.getElementById("terceira").classList.remove("hide")
-    }
-    function redirect() {
-      location.href = "https://tecidomarromzerobarriga.online" // SEU LINK AQUI
-    }
-  </script>
+  <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
